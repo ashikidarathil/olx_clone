@@ -6,7 +6,7 @@ import searchwt from '../../assets/search.svg';
 import addBtn from '../../assets/addButton.png';
 import Avatar from '../../assets/avatar.png';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '../firebase/Firebase';
+import { auth } from '../Firebase/Firebase';
 import { signOut } from 'firebase/auth';
 import { useState, useRef, useEffect } from 'react';
 

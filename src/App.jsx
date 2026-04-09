@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home.jsx";
-import Details from "./components/details/Details.jsx"; 
+import Home from "./components/Pages/Home.jsx";
+import Details from "./components/Details/Details.jsx"; 
 import 'flowbite';
 
 export default function App() {

@@ -1,15 +1,15 @@
 import { Modal, ModalBody } from "flowbite-react";
 import { useState } from "react";
-import Input from "../input/Input";
-import { userAuth } from "../context/Auth";
+import Input from "../Input/Input";
+import { userAuth } from "../Context/Auth";
 import { addDoc, collection } from "firebase/firestore";
-import { fetchFromFireStore, fireStore } from "../firebase/Firebase";
+import { fetchFromFireStore, fireStore } from "../Firebase/Firebase";
 import fileUpload from '../../assets/fileUpload.svg';
 import loading from '../../assets/loading.gif';
 import close from '../../assets/close.svg';
 
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { storage } from "../firebase/Firebase";
+import { storage } from "../Firebase/Firebase";
 
 export default function Sell({ toggleModalSell, status, setItems }) {
   const [title, setTitle] = useState("");

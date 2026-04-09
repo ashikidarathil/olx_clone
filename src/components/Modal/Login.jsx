@@ -6,7 +6,7 @@ import Close from '../../assets/close.svg';
 import Avatar from '../../assets/avatar.png';
 import Google from '../../assets/google.png';
 import { signInWithPopup } from 'firebase/auth';
-import { auth, provider } from '../firebase/Firebase';
+import { auth, provider } from '../Firebase/Firebase';
 
 const initialState = {
   isOpen: false,

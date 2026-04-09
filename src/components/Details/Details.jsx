@@ -1,8 +1,8 @@
 import { useLocation, Link } from "react-router-dom";
-import { itemsContext } from "../context/Item";
+import { itemsContext } from "../Context/Item";
 import Navbar from "../Navbar/Navbar"
-import Sell from "../modal/Sell";
-import Login from "../modal/login";
+import Sell from "../Modal/Sell";
+import Login from "../Modal/Login";
 import { useState } from "react";
 import arrow from "../../assets/arrow-down.svg"; 
 

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar"
-import Login from "../modal/login";
-import Sell from "../modal/Sell";
-import Card from "../card/Card";
-import { itemsContext } from "../context/Item";
+import Login from "../Modal/Login";
+import Sell from "../Modal/Sell";
+import Card from "../Card/Card";
+import { itemsContext } from "../Context/Item";
 
 export default function Home() {
   const [openModal, setModal] = useState(false);

@@ -1,6 +1,6 @@
 import { useLocation, Link } from "react-router-dom";
 import { itemsContext } from "../context/Item";
-import Navbar from "../navbar/navbar";
+import Navbar from "../Navbar/Navbar"
 import Sell from "../modal/Sell";
 import Login from "../modal/login";
 import { useState } from "react";

@@ -1,0 +1,93 @@
+.lang {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* ... (existing styles unchanged) */
+
+li {
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: color 0.2s; /* Add for hover effect */
+}
+
+li:hover {
+  color: #002f34; /* Darker color on hover */
+}
+
+.all-cats {
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.all-cats:hover {
+  color: #002f34;
+}
+
+.sub-lists {
+  overflow: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory; /* Optional: snap to items on scroll for better mobile UX */
+  -webkit-overflow-scrolling: touch; /* Smooth touch scrolling on iOS */
+}
+
+.sub-lists::-webkit-scrollbar {
+  display: none;
+}
+
+/* Profile Dropdown Styling */
+.relative div[class*="absolute"] {
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glassmorphism effect for dropdown */
+.z-\[60\] {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+@media (max-width: 767px) {
+  .location-search,
+  .locality-search,
+  .lg\:block {
+    display: none !important;
+  }
+
+  .main-search {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  nav {
+    justify-content: space-between !important;
+  }
+}
+
+/* Ensure the navbar stays on top */
+nav {
+  top: 0;
+  left: 0;
+}
